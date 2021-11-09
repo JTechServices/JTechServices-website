@@ -1,0 +1,78 @@
+***************************************************************************
+                                CONTACT
+***************************************************************************/
+
+div.contact {
+    background-color: #121212;
+}
+
+.contact form {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+      /* float:left; */
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    background: #121212;
+}
+
+.contact h3 {
+    color: #fff;
+    background-color: #121212;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.contact h3::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 0;
+}
+
+.contact p {
+    margin: 0 15px 10px;
+}
+.contact label {
+    display: none;
+}
+.contact input {
+    width: 50%;
+    border: none;
+    border: 1px solid #dddddd78;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.contact textarea#message {
+    width: 50%;
+    height: 100px;
+    border: 1px solid #dddddd78;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #F9F6EE;
+}
+.contact input#submit {
+    color: #fff;
+    background: #FA0032;
+    float: left;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 4px 0px #00000087;
+    margin: 10px 0;
+    width: 10%;
+}
+
+/***************************************************************************
+                                END CONTACT
+***************************************************************************/

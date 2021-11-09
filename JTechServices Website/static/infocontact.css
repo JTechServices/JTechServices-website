@@ -1,0 +1,354 @@
+
+
+/*© Jtech 2021*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+
+/*------Navigation-----*/
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding-top: -10px;
+}
+
+.container-fluid h1 strong{
+    color: #fff;
+    position: relative;
+    right: 25px;
+}
+
+.container-fluid h1 ::after {
+    position: relative;
+    right: 15px;
+}
+
+.navbar-brand img{
+    height: 80px;
+    padding-left: 10px;
+}
+
+.collapse{
+    padding-left: 38%;
+}
+
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover{
+    color: red!important;
+}
+
+.navbar{
+    background: #121212;
+}
+
+.navbar-toggler{
+    border: none!important;
+}
+
+.nav-link{
+    color: #fff!important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*------Popup window------*/
+.flashes {
+    background-color: #333;
+    padding-top: 15px;
+    transform: translateY(35%);
+    padding-bottom: 15px;
+    display: block;
+}
+
+ul.flashes {
+    list-style: none;
+}
+
+li.popup::before {
+    content: "►";
+    color: red;
+}
+
+.flashes li {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transform: translateY(-48%);
+    font-family: sans-serif;
+}
+
+/*------Slider------*/
+#slider{
+    width: 100%;
+}
+
+.carousel-inner{
+    transform: translate3d(0,0,0);
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+
+.carousel-caption h5{
+    color: #fff;
+    font-size: 42px;
+}
+
+.carousel-caption h6{
+    color: #fff;
+    font-size: 32px;
+}
+
+/*-----About-----*/
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    background-color: #121212;
+}
+
+.about-content{
+    padding-top: 20px;
+}
+
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar{
+    border-radius: 16px;
+}
+
+.progress{
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+
+
+
+/*-------Services-------*/
+#services{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../static/Services.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#services h1{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+
+#services h1::after{
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.service{
+    margin-top: 40px;
+}
+
+.icon{
+    font-size: 39px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 82px;
+    width: 89px;
+}
+
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.service .col-md-3:hover{
+    background: red;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+/*------Team members and support------*/
+#team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+
+
+h1{
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+h1::after{
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+    position: relative;
+    right: 25px;
+}
+
+.profile-pic{
+    margin-top: 25px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.profile-pic h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: red !important;
+}
+
+.profile-pic h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.fab{
+    height: 25px;
+    width: 25px;
+    color: red !important;
+    padding: 4px;
+}
+
+.img-box ul{
+    padding: 15px 0;
+    z-index: 2; 
+    bottom: 0;
+    left: 50%;
+    transform: rotateX(50%);
+}
+
+.img-box ul li{
+    padding: 5px;
+    display: inline-block;
+
+}
+
+/*---------Promo----------*/
+#promo{
+    background-image: linear-gradient(rgba(0,0,0,0.7),
+     rgba(0,0,0,0.7)), url(../static/Promo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+
+.btn-btn-primary{
+    color: red;
+}
+
+/*-------Get in touch-------*/
+#contact{
+    background: #0B0A04;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+
+.contact-form .form-group{
+    padding: 10px;
+}
+
+.btn-danger{
+    margin-left: 10px;
+}
+
+.form-control{
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+::placeholder{
+    color: #999 !important;
+}
+
+.follow{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 4px;
+}
+
+.contact-info .fas{
+    color: red;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.contact-info {
+    /* float:right; */
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    background: #121212;
+}
+
+.fab{
+    margin: 15px;
+}
+
+/*-------Prefooter-------*/
+
+
+/*-------Footer-------*/
+#footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.fa-heart{
+    margin: 3px;
+    color: red;
+}
+
+
+/*------URL COLOR------*/
+.fab{
+    color: red;
+}

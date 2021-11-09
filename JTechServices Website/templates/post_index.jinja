@@ -1,0 +1,291 @@
+<!--© Jtech 2021-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JTech-Services</title>
+        
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='bootstrap.min.css') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='infocontact.css') }}">
+        <script src="{{url_for('static', filename='main.js')}}"></script>
+        <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+
+        <script src="https://kit.fontawesome.com/efd8570a2e.js" crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous">
+        </script>
+
+        <meta charset="UTF-8">
+    </head>
+
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+            {% for message in messages %}
+                <li class="popup"> {{ message }} </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+
+
+    <body>
+        <!----NavigationBar---->
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="static/Logo.png" alt="logo"></a>
+                    <h1 class="text-center list-inline mx-auto justify-content-center"><strong>JTech Services</strong></h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#top">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Our team">OUR TEAM</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#promo">CONTACTS</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </section>
+          <!-----Slider----->
+            <div id="slider">
+                <div id="headerSlider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#headerSliderIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#headerSliderIndicators" data-slide-to="1"></li>
+                      <li data-target="#headerSliderIndicators" data-slide-to="2"></li>
+                      <li data-target="#headerSliderIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="static/programing.jpg" alt="Programming">
+                          <div class="carousel-caption">
+                            <h5>Programování, Tvoření a Designování Webů</h5>
+                            <h6>Programming & Web Development</h6>
+                          </div>                         
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="static/Itservis.jpg" alt="Itservis">
+                          <div class="carousel-caption">
+                            <h5>It Servis a It Služby</h5>
+                            <h6>It Service & It Services</h6>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="static/soldering.jpg" alt="soldering">
+                          <div class="carousel-caption">
+                            <h5>Pájení a SMT/BGA Reballing</h5>
+                            <h6>Soldering & SMT/BGA Reballing</h6>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="static/hosting.jpg" alt="hosting">
+                          <div class="carousel-caption">
+                            <h5>Hosting Serverů</h5>
+                            <h6>Server Hosting</h6>
+                          </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#headerSliderInicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        <!--About-->
+        <section id="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h2>O nás/About Us</h2>
+                      <div class="about-content">
+                        Abychom se Vám krátce představili. Jsme nadšenci do světa It a všeho s tím spojeného.
+                        Věnujeme se programování a také tvoření a designování webových stránek, které jsme schopni 
+                        sami hostovat a spravovat. 
+                        Naším extra je pájení a SMT/BGA rebbaling. Zprostředkováváme It servis a služby pro notebooky
+                        a desktopy.
+                        <hr>
+                        To shortly indroduce ourselfs to you. We are enthusiasts to the world of IT technologies and
+                        everything It matches with It. We are dedicated to Programming & Web Development, witch
+                        we are able to manage.
+                        Our extra is Soldering & SMT/BGA Rebbaling. We provide IT Service & IT Services for
+                        notebooks, desktop's, mobile devices and Tablets.
+                      </div>
+                  </div>
+                  <div class="col-md-6 skills-bar">
+                      <p>Programming</p>
+                      <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" ><strong>75%</strong></div>
+                      </div>
+                      <p>Web Development</p>
+                      <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;"><strong>70%</strong></div>
+                      </div>
+                      <p>Soldering & SMT/BGA rebbaling</p>
+                      <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;"><strong>65%</strong></div>
+                      </div>
+                      <p>Server Hosting</p>
+                      <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;"><strong>90%</strong></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-----Services----->
+        <section id="services">
+            <div class="container">
+                <h1>Naše Služby/Our Services</h1>
+                <div class="row services">
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                          <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>
+                           Kódování v Html a CSS s JavaScriptem. Znalost
+                           Jquiery a Ajax. Správa webových stránek.
+                           <hr>
+                           Coding in Html and CSS with JavaScript. Known
+                           of Jquiery and Ajax. Webside administration.
+                        </p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="icon">
+                        <i class="fas fa-terminal"></i>
+                      </div>
+                      <h3>Programming & Hosting</h3>
+                      <p>
+                         Programování v Pythonu, Javě a C++, C#, .NET. Hostování serverů.
+                         <hr>
+                         Programming in Python, Java and C++, C#, .NET. Server Hosting.
+                      </p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="icon">
+                        <i class="fas fa-microchip"></i>
+                      </div>
+                      <h3>Soldering & SMT/BGA Reballing</h3>
+                      <p>
+                         Tvrdé a jemné pájení. Osazování plošných spojů,
+                         SMT/BGA Reballing.
+                         <hr>
+                         Hard and Soft Soldering. PCB mounting
+                         and SMT/BGA Reballing.
+                      </p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                      <div class="icon">
+                        <i class="fas fa-tools"></i>
+                      </div>
+                      <h3>Notebook & Desktop servis</h3>
+                      <p>
+                         Servis Hardwaru a Softwaru. Čištění, Upgradování.
+                         Sestavení PC a Notebooku. Sestavení PC na míru.
+                         <hr>
+                         Servis of hardware and software. Cleaning, Boosting and
+                         Upgrading. Desktop and Notebook assembly. Custom Desktop
+                         and notebook assembly.
+                      </p>
+                    </div>
+                </div>
+        <!--Our Team-->
+        <section id="Our team">
+          <div class="container">
+              <h1>Náš Tým/Our Team</h1>
+                  <div class="row">
+                  <div class="col-md-3 profile-pic text-center">
+                  <div class="img-box">
+                    <ul>
+                      <li><a href="https://www.facebook.com/JJTechServicess/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/jakub-průcha-b95987191/"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="https://github.com/JTechServices?tab=projects&type=beta"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                  </div>
+                    <h2>Jakub Průcha</h2>
+                    <h3>Co-Founder/Web Development</h3>
+                    <hr>
+                    <p>Coding in Html and CSS with JavaScript. Hosting and
+                     administration of websites. Soldering and SMT/BGA Reballing. Frond-end. 
+                     Web Development.
+                    </p>
+                  </div>
+                  <div class="col-md-3 profile-pic text-center">
+                  <div class="img-box">
+                    <ul>
+                      <li><a href="https://www.facebook.com/JJTechServicess/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                  </div> 
+                    <h2>Jan Burýšek</h2>
+                    <h3>Co-Founder/Programmer</h3>
+                    <hr>
+                    <p>Programming in Python, C++, C#, .NET and Java. Administration 
+                     and Hosting of server. Soldering and SMT/BGA Reballing.
+                    </p>
+                  </div> 
+                  </div> 
+            </div>                        
+        </section>
+          <!----Promo----> 
+          <section id="promo">
+            <div class="container">
+            </div>
+          </section>       
+            </div>
+        </section>
+
+
+        <div class="col-md-6 contact-info">
+              <div class="follow"><b>Address:</b><i class="fas fa-map-pin"></i>Jiráskova 220, Rokycany 337 01</div>
+              <div class="follow"><b>Phone:</b><i class="fas fa-phone"></i><a href="tel:+420 734 598 717">+420 734 598 717</a> <a href="tel:+420 603 113 289">+420 603 113 289</a> </div>
+              <div class="follow"><b>Email:</b><i class="fas fa-envelope"></i><a href="mailto:jjtechservicess@gmail.com" > jjtechservicess@gmail.com></a></div>
+        </div>
+
+        <section id="footer">
+          <div class="container text-center">
+            <p>Made with <i class="fas fa-heart"></i>  By Jakub Průcha from 
+              JTech-Services.</p>
+          </div>
+        </section>
+        <!--Footer End-->
+        <script src="static/main.js"></script>
+        <script>
+          var scroll = new SmoothScroll('a[href*="#"]');
+        </script>     
+    </body>
+</html>
+
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('.static', filename='styles.css')}}">
+{% endblock %}
+
